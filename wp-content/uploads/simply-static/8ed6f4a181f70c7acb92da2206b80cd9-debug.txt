@@ -1,0 +1,2 @@
+[2024-06-04 20:02:32] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/dialaburguer
+[2024-06-04 20:02:32] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/dialaburguer
