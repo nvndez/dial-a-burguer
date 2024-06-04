@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+
+	<title>Dial-a Burguer</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="alternate" type="application/rss+xml" title="Dial-a Burguer &raquo; Feed" href="https://nvndez.github.io/dial-a-burguer/feed/">
+<link rel="alternate" type="application/rss+xml" title="Dial-a Burguer &raquo; Feed de comentários" href="https://nvndez.github.io/dial-a-burguer/comments/feed/">
+<link rel="stylesheet" id="blocksy-dynamic-global-css" href="https://nvndez.github.io/dial-a-burguer/wp-content/uploads/blocksy/css/global.css?ver=31300" media="all">
+<style id="global-styles-inline-css">body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--palette-color-1: var(--theme-palette-color-1, #5B38ED);--wp--preset--color--palette-color-2: var(--theme-palette-color-2, #4928cf);--wp--preset--color--palette-color-3: var(--theme-palette-color-3, #4d5d6d);--wp--preset--color--palette-color-4: var(--theme-palette-color-4, #111518);--wp--preset--color--palette-color-5: var(--theme-palette-color-5, #E7EBEE);--wp--preset--color--palette-color-6: var(--theme-palette-color-6, #F3F5F7);--wp--preset--color--palette-color-7: var(--theme-palette-color-7, #FBFBFC);--wp--preset--color--palette-color-8: var(--theme-palette-color-8, #ffffff);--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--gradient--juicy-peach: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);--wp--preset--gradient--young-passion: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);--wp--preset--gradient--true-sunset: linear-gradient(to right, #fa709a 0%, #fee140 100%);--wp--preset--gradient--morpheus-den: linear-gradient(to top, #30cfd0 0%, #330867 100%);--wp--preset--gradient--plum-plate: linear-gradient(135deg, #667eea 0%, #764ba2 100%);--wp--preset--gradient--aqua-splash: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);--wp--preset--gradient--love-kiss: linear-gradient(to top, #ff0844 0%, #ffb199 100%);--wp--preset--gradient--new-retrowave: linear-gradient(to top, #3b41c5 0%, #a981bb 49%, #ffc8a9 100%);--wp--preset--gradient--plum-bath: linear-gradient(to top, #cc208e 0%, #6713d2 100%);--wp--preset--gradient--high-flight: linear-gradient(to right, #0acffe 0%, #495aff 100%);--wp--preset--gradient--teen-party: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);--wp--preset--gradient--fabled-sunset: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);--wp--preset--gradient--arielle-smile: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);--wp--preset--gradient--itmeo-branding: linear-gradient(180deg, #2af598 0%, #009efd 100%);--wp--preset--gradient--deep-blue: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);--wp--preset--gradient--strong-bliss: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);--wp--preset--gradient--sweet-period: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);--wp--preset--gradient--purple-division: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);--wp--preset--gradient--cold-evening: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);--wp--preset--gradient--mountain-rock: linear-gradient(to right, #868f96 0%, #596164 100%);--wp--preset--gradient--desert-hump: linear-gradient(to top, #c79081 0%, #dfa579 100%);--wp--preset--gradient--ethernal-constance: linear-gradient(to top, #09203f 0%, #537895 100%);--wp--preset--gradient--happy-memories: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);--wp--preset--gradient--grown-early: linear-gradient(to top, #0ba360 0%, #3cba92 100%);--wp--preset--gradient--morning-salad: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%);--wp--preset--gradient--night-call: linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);--wp--preset--gradient--mind-crawl: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);--wp--preset--gradient--angel-care: linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%);--wp--preset--gradient--juicy-cake: linear-gradient(to top, #e14fad 0%, #f9d423 100%);--wp--preset--gradient--rich-metal: linear-gradient(to right, #d7d2cc 0%, #304352 100%);--wp--preset--gradient--mole-hall: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);--wp--preset--gradient--cloudy-knoxville: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);--wp--preset--gradient--soft-grass: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);--wp--preset--gradient--saint-petersburg: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);--wp--preset--gradient--everlasting-sky: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);--wp--preset--gradient--kind-steel: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);--wp--preset--gradient--over-sun: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);--wp--preset--gradient--premium-white: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);--wp--preset--gradient--clean-mirror: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);--wp--preset--gradient--wild-apple: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);--wp--preset--gradient--snow-again: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);--wp--preset--gradient--confident-cloud: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);--wp--preset--gradient--glass-water: linear-gradient(to top, #dfe9f3 0%, white 100%);--wp--preset--gradient--perfect-white: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: clamp(22px, 1.375rem + ((1vw - 3.2px) * 0.625), 30px);--wp--preset--font-size--x-large: clamp(30px, 1.875rem + ((1vw - 3.2px) * 1.563), 50px);--wp--preset--font-size--xx-large: clamp(45px, 2.813rem + ((1vw - 3.2px) * 2.734), 80px);--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}body { margin: 0;--wp--style--global--content-size: var(--theme-block-max-width);--wp--style--global--wide-size: var(--theme-block-wide-max-width); }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: var(--theme-content-spacing); margin-block-end: 0; }:where(.wp-site-blocks) > :first-child:first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child:last-child { margin-block-end: 0; }body { --wp--style--block-gap: var(--theme-content-spacing); }:where(body .is-layout-flow)  > :first-child:first-child{margin-block-start: 0;}:where(body .is-layout-flow)  > :last-child:last-child{margin-block-end: 0;}:where(body .is-layout-flow)  > *{margin-block-start: var(--theme-content-spacing);margin-block-end: 0;}:where(body .is-layout-constrained)  > :first-child:first-child{margin-block-start: 0;}:where(body .is-layout-constrained)  > :last-child:last-child{margin-block-end: 0;}:where(body .is-layout-constrained)  > *{margin-block-start: var(--theme-content-spacing);margin-block-end: 0;}:where(body .is-layout-flex) {gap: var(--theme-content-spacing);}:where(body .is-layout-grid) {gap: var(--theme-content-spacing);}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-palette-color-1-color{color: var(--wp--preset--color--palette-color-1) !important;}.has-palette-color-2-color{color: var(--wp--preset--color--palette-color-2) !important;}.has-palette-color-3-color{color: var(--wp--preset--color--palette-color-3) !important;}.has-palette-color-4-color{color: var(--wp--preset--color--palette-color-4) !important;}.has-palette-color-5-color{color: var(--wp--preset--color--palette-color-5) !important;}.has-palette-color-6-color{color: var(--wp--preset--color--palette-color-6) !important;}.has-palette-color-7-color{color: var(--wp--preset--color--palette-color-7) !important;}.has-palette-color-8-color{color: var(--wp--preset--color--palette-color-8) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-palette-color-1-background-color{background-color: var(--wp--preset--color--palette-color-1) !important;}.has-palette-color-2-background-color{background-color: var(--wp--preset--color--palette-color-2) !important;}.has-palette-color-3-background-color{background-color: var(--wp--preset--color--palette-color-3) !important;}.has-palette-color-4-background-color{background-color: var(--wp--preset--color--palette-color-4) !important;}.has-palette-color-5-background-color{background-color: var(--wp--preset--color--palette-color-5) !important;}.has-palette-color-6-background-color{background-color: var(--wp--preset--color--palette-color-6) !important;}.has-palette-color-7-background-color{background-color: var(--wp--preset--color--palette-color-7) !important;}.has-palette-color-8-background-color{background-color: var(--wp--preset--color--palette-color-8) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-palette-color-1-border-color{border-color: var(--wp--preset--color--palette-color-1) !important;}.has-palette-color-2-border-color{border-color: var(--wp--preset--color--palette-color-2) !important;}.has-palette-color-3-border-color{border-color: var(--wp--preset--color--palette-color-3) !important;}.has-palette-color-4-border-color{border-color: var(--wp--preset--color--palette-color-4) !important;}.has-palette-color-5-border-color{border-color: var(--wp--preset--color--palette-color-5) !important;}.has-palette-color-6-border-color{border-color: var(--wp--preset--color--palette-color-6) !important;}.has-palette-color-7-border-color{border-color: var(--wp--preset--color--palette-color-7) !important;}.has-palette-color-8-border-color{border-color: var(--wp--preset--color--palette-color-8) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-juicy-peach-gradient-background{background: var(--wp--preset--gradient--juicy-peach) !important;}.has-young-passion-gradient-background{background: var(--wp--preset--gradient--young-passion) !important;}.has-true-sunset-gradient-background{background: var(--wp--preset--gradient--true-sunset) !important;}.has-morpheus-den-gradient-background{background: var(--wp--preset--gradient--morpheus-den) !important;}.has-plum-plate-gradient-background{background: var(--wp--preset--gradient--plum-plate) !important;}.has-aqua-splash-gradient-background{background: var(--wp--preset--gradient--aqua-splash) !important;}.has-love-kiss-gradient-background{background: var(--wp--preset--gradient--love-kiss) !important;}.has-new-retrowave-gradient-background{background: var(--wp--preset--gradient--new-retrowave) !important;}.has-plum-bath-gradient-background{background: var(--wp--preset--gradient--plum-bath) !important;}.has-high-flight-gradient-background{background: var(--wp--preset--gradient--high-flight) !important;}.has-teen-party-gradient-background{background: var(--wp--preset--gradient--teen-party) !important;}.has-fabled-sunset-gradient-background{background: var(--wp--preset--gradient--fabled-sunset) !important;}.has-arielle-smile-gradient-background{background: var(--wp--preset--gradient--arielle-smile) !important;}.has-itmeo-branding-gradient-background{background: var(--wp--preset--gradient--itmeo-branding) !important;}.has-deep-blue-gradient-background{background: var(--wp--preset--gradient--deep-blue) !important;}.has-strong-bliss-gradient-background{background: var(--wp--preset--gradient--strong-bliss) !important;}.has-sweet-period-gradient-background{background: var(--wp--preset--gradient--sweet-period) !important;}.has-purple-division-gradient-background{background: var(--wp--preset--gradient--purple-division) !important;}.has-cold-evening-gradient-background{background: var(--wp--preset--gradient--cold-evening) !important;}.has-mountain-rock-gradient-background{background: var(--wp--preset--gradient--mountain-rock) !important;}.has-desert-hump-gradient-background{background: var(--wp--preset--gradient--desert-hump) !important;}.has-ethernal-constance-gradient-background{background: var(--wp--preset--gradient--ethernal-constance) !important;}.has-happy-memories-gradient-background{background: var(--wp--preset--gradient--happy-memories) !important;}.has-grown-early-gradient-background{background: var(--wp--preset--gradient--grown-early) !important;}.has-morning-salad-gradient-background{background: var(--wp--preset--gradient--morning-salad) !important;}.has-night-call-gradient-background{background: var(--wp--preset--gradient--night-call) !important;}.has-mind-crawl-gradient-background{background: var(--wp--preset--gradient--mind-crawl) !important;}.has-angel-care-gradient-background{background: var(--wp--preset--gradient--angel-care) !important;}.has-juicy-cake-gradient-background{background: var(--wp--preset--gradient--juicy-cake) !important;}.has-rich-metal-gradient-background{background: var(--wp--preset--gradient--rich-metal) !important;}.has-mole-hall-gradient-background{background: var(--wp--preset--gradient--mole-hall) !important;}.has-cloudy-knoxville-gradient-background{background: var(--wp--preset--gradient--cloudy-knoxville) !important;}.has-soft-grass-gradient-background{background: var(--wp--preset--gradient--soft-grass) !important;}.has-saint-petersburg-gradient-background{background: var(--wp--preset--gradient--saint-petersburg) !important;}.has-everlasting-sky-gradient-background{background: var(--wp--preset--gradient--everlasting-sky) !important;}.has-kind-steel-gradient-background{background: var(--wp--preset--gradient--kind-steel) !important;}.has-over-sun-gradient-background{background: var(--wp--preset--gradient--over-sun) !important;}.has-premium-white-gradient-background{background: var(--wp--preset--gradient--premium-white) !important;}.has-clean-mirror-gradient-background{background: var(--wp--preset--gradient--clean-mirror) !important;}.has-wild-apple-gradient-background{background: var(--wp--preset--gradient--wild-apple) !important;}.has-snow-again-gradient-background{background: var(--wp--preset--gradient--snow-again) !important;}.has-confident-cloud-gradient-background{background: var(--wp--preset--gradient--confident-cloud) !important;}.has-glass-water-gradient-background{background: var(--wp--preset--gradient--glass-water) !important;}.has-perfect-white-gradient-background{background: var(--wp--preset--gradient--perfect-white) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-xx-large-font-size{font-size: var(--wp--preset--font-size--xx-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+.wp-block-pullquote{font-size: clamp(0.984em, 0.984rem + ((1vw - 0.2em) * 0.645), 1.5em);line-height: 1.6;}</style>
+<link rel="stylesheet" id="parent-style-css" href="https://nvndez.github.io/dial-a-burguer/wp-content/themes/blocksy/style.css?ver=6.5.3" media="all">
+<link rel="stylesheet" id="elementor-frontend-css" href="https://nvndez.github.io/dial-a-burguer/wp-content/plugins/elementor/assets/css/frontend-lite.min.css?ver=3.21.8" media="all">
+<link rel="stylesheet" id="swiper-css" href="https://nvndez.github.io/dial-a-burguer/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5" media="all">
+<link rel="stylesheet" id="elementor-post-970-css" href="https://nvndez.github.io/dial-a-burguer/wp-content/uploads/elementor/css/post-970.css?ver=1717527811" media="all">
+<link rel="stylesheet" id="elementor-post-700-css" href="https://nvndez.github.io/dial-a-burguer/wp-content/uploads/elementor/css/post-700.css?ver=1717531147" media="all">
+<link rel="stylesheet" id="blocksy-fonts-font-source-google-css" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&#038;display=swap" media="all">
+<link rel="stylesheet" id="ct-main-styles-css" href="https://nvndez.github.io/dial-a-burguer/wp-content/themes/blocksy/static/bundle/main.min.css?ver=2.0.51" media="all">
+<link rel="stylesheet" id="ct-elementor-styles-css" href="https://nvndez.github.io/dial-a-burguer/wp-content/themes/blocksy/static/bundle/elementor-frontend.min.css?ver=2.0.51" media="all">
+<link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=6.5.3" media="all">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link rel="https://api.w.org/" href="https://nvndez.github.io/dial-a-burguer/wp-json/">
+<link rel="alternate" type="application/json" href="https://nvndez.github.io/dial-a-burguer/wp-json/wp/v2/pages/700">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://nvndez.github.io/dial-a-burguer/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.5.3">
+<link rel="canonical" href="https://nvndez.github.io/dial-a-burguer/">
+<link rel="shortlink" href="https://nvndez.github.io/dial-a-burguer/">
+<link rel="alternate" type="application/json+oembed" href="https://nvndez.github.io/dial-a-burguer/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnvndez.github.io%2Fdial-a-burguer%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://nvndez.github.io/dial-a-burguer/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnvndez.github.io%2Fdial-a-burguer%2F#038;format=xml">
+<noscript><link rel="stylesheet" href="https://nvndez.github.io/dial-a-burguer/wp-content/themes/blocksy/static/bundle/no-scripts.min.css" type="text/css"></noscript>
+<style id="ct-main-styles-inline-css">[data-header*="type-1"] {--has-transparent-header:1;}</style>
+<meta name="generator" content="Elementor 3.21.8; features: e_optimized_assets_loading, e_optimized_css_loading, e_font_icon_svg, additional_custom_breakpoints, e_lazyload; settings: css_print_method-external, google_font-enabled, font_display-auto">
+			<style>.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}</style>
+			<link rel="icon" href="https://nvndez.github.io/dial-a-burguer/wp-content/uploads/2024/06/DALLE_2024-03-29_17.00.50_-_Create_a_vibrant_logo_for_Dial-A-Burger_a_burger_delivery_game._The_logo_should_feature_an_illustrated_burger_in_a_dynamic_and_playful_style_incor-removebg-preview-100x100.png" sizes="32x32">
+<link rel="icon" href="https://nvndez.github.io/dial-a-burguer/wp-content/uploads/2024/06/DALLE_2024-03-29_17.00.50_-_Create_a_vibrant_logo_for_Dial-A-Burger_a_burger_delivery_game._The_logo_should_feature_an_illustrated_burger_in_a_dynamic_and_playful_style_incor-removebg-preview-300x300.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://nvndez.github.io/dial-a-burguer/wp-content/uploads/2024/06/DALLE_2024-03-29_17.00.50_-_Create_a_vibrant_logo_for_Dial-A-Burger_a_burger_delivery_game._The_logo_should_feature_an_illustrated_burger_in_a_dynamic_and_playful_style_incor-removebg-preview-300x300.png">
+<meta name="msapplication-TileImage" content="https://nvndez.github.io/dial-a-burguer/wp-content/uploads/2024/06/DALLE_2024-03-29_17.00.50_-_Create_a_vibrant_logo_for_Dial-A-Burger_a_burger_delivery_game._The_logo_should_feature_an_illustrated_burger_in_a_dynamic_and_playful_style_incor-removebg-preview-300x300.png">
+		<style id="wp-custom-css">.ct-frosted-glass {
+	backdrop-filter: blur(40px) brightness(200%);
+	-webkit-backdrop-filter: blur(40px) brightness(200%);
+}
+
+.ct-subscribe-form {
+	--theme-form-field-height: 60px;
+	--theme-form-field-padding: 0 25px;
+	--theme-form-field-background-initial-color: #000;
+	--theme-form-field-background-focus-color: rgba(0, 0, 0, 0.4);
+	--theme-form-field-border-width: 0;
+	--theme-text-color: #fff;
+	
+	
+	--theme-button-min-height: 60px;
+	--theme-button-background-initial-color: var(--theme-palette-color-1);
+	--theme-button-text-initial-color: #fff;
+}
+
+/* main icon boxes */
+.ct-mainbox h5,
+.ct-mainbox h6,
+.ct-mainbox p {
+	transition: all 0.2s ease;
+}
+.ct-mainbox:hover h5,
+.ct-mainbox:hover h6,
+.ct-mainbox:hover p { 
+	color: var(--theme-palette-color-8) !important;
+}
+
+.elementor-shortcode [data-products] figure {
+	margin-bottom: var(--product-element-spacing, 10px) !important;
+}</style>
+			</head>
+
+
+<body class="home page-template-default page page-id-700 wp-custom-logo wp-embed-responsive elementor-default elementor-kit-970 elementor-page elementor-page-700 ct-elementor-default-template" data-link="type-2" data-prefix="single_page" data-header="type-1" data-footer="type-1" itemscope="itemscope" itemtype="https://schema.org/WebPage">
+
+<a class="skip-link show-on-focus" href="#main">
+	Pular para o conteúdo</a>
+
+<div class="ct-drawer-canvas" data-location="start"><div id="offcanvas" class="ct-panel ct-header" data-behaviour="right-side"><div class="ct-panel-inner">
+		<div class="ct-panel-actions">
+			
+			<button class="ct-toggle-close" data-type="type-1" aria-label="Fechar gaveta">
+				<svg class="ct-icon" width="12" height="12" viewbox="0 0 15 15"><path d="M1 15a1 1 0 01-.71-.29 1 1 0 010-1.41l5.8-5.8-5.8-5.8A1 1 0 011.7.29l5.8 5.8 5.8-5.8a1 1 0 011.41 1.41l-5.8 5.8 5.8 5.8a1 1 0 01-1.41 1.41l-5.8-5.8-5.8 5.8A1 1 0 011 15z"></path></svg>
+			</button>
+		</div>
+		<div class="ct-panel-content" data-device="desktop"><div class="ct-panel-content-inner"></div></div>
+<div class="ct-panel-content" data-device="mobile"><div class="ct-panel-content-inner">
+<a href="https://nvndez.github.io/dial-a-burguer/" class="site-logo-container" data-id="offcanvas-logo" rel="home" itemprop="url">
+				</a>
+
+
+<nav class="mobile-menu" data-id="mobile-menu" data-interaction="click" data-toggle-type="type-1" data-submenu-dots="yes" aria-label="Menu fora do ecrã">
+	<ul id="menu-main-menu-1" role="menubar">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-700 current_page_item menu-item-967" role="none"><a href="https://nvndez.github.io/dial-a-burguer/" aria-current="page" class="ct-menu-link" role="menuitem">Home</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1001" role="none"><a href="#game" class="ct-menu-link" role="menuitem">About</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1003" role="none"><a href="#objective" class="ct-menu-link" role="menuitem">Objective</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1002" role="none"><a href="#levels" class="ct-menu-link" role="menuitem">Levels</a></li>
+</ul></nav>
+
+
+<div class="ct-header-socials " data-id="socials">
+
+	
+		<div class="ct-social-box" data-color="custom" data-icon-size="custom" data-icons-type="rounded:solid">
+			
+			
+							
+				<a href="#" data-network="facebook" aria-label="Facebook">
+					<span class="ct-icon-container">
+					<svg width="20px" height="20px" viewbox="0 0 20 20" aria-hidden="true">
+						<path d="M20,10.1c0-5.5-4.5-10-10-10S0,4.5,0,10.1c0,5,3.7,9.1,8.4,9.9v-7H5.9v-2.9h2.5V7.9C8.4,5.4,9.9,4,12.2,4c1.1,0,2.2,0.2,2.2,0.2v2.5h-1.3c-1.2,0-1.6,0.8-1.6,1.6v1.9h2.8L13.9,13h-2.3v7C16.3,19.2,20,15.1,20,10.1z"></path>
+					</svg>
+				</span>				</a>
+							
+				<a href="#" data-network="twitter" aria-label="X (Twitter)">
+					<span class="ct-icon-container">
+					<svg width="20px" height="20px" viewbox="0 0 20 20" aria-hidden="true">
+						<path d="M2.9 0C1.3 0 0 1.3 0 2.9v14.3C0 18.7 1.3 20 2.9 20h14.3c1.6 0 2.9-1.3 2.9-2.9V2.9C20 1.3 18.7 0 17.1 0H2.9zm13.2 3.8L11.5 9l5.5 7.2h-4.3l-3.3-4.4-3.8 4.4H3.4l5-5.7-5.3-6.7h4.4l3 4 3.5-4h2.1zM14.4 15 6.8 5H5.6l7.7 10h1.1z"></path>
+					</svg>
+				</span>				</a>
+							
+				<a href="#" data-network="linkedin" aria-label="LinkedIn">
+					<span class="ct-icon-container">
+					<svg width="20px" height="20px" viewbox="0 0 20 20" aria-hidden="true">
+						<path d="M18.6,0H1.4C0.6,0,0,0.6,0,1.4v17.1C0,19.4,0.6,20,1.4,20h17.1c0.8,0,1.4-0.6,1.4-1.4V1.4C20,0.6,19.4,0,18.6,0z M6,17.1h-3V7.6h3L6,17.1L6,17.1zM4.6,6.3c-1,0-1.7-0.8-1.7-1.7s0.8-1.7,1.7-1.7c0.9,0,1.7,0.8,1.7,1.7C6.3,5.5,5.5,6.3,4.6,6.3z M17.2,17.1h-3v-4.6c0-1.1,0-2.5-1.5-2.5c-1.5,0-1.8,1.2-1.8,2.5v4.7h-3V7.6h2.8v1.3h0c0.4-0.8,1.4-1.5,2.8-1.5c3,0,3.6,2,3.6,4.5V17.1z"></path>
+					</svg>
+				</span>				</a>
+							
+				<a href="#" data-network="medium" aria-label="Medium">
+					<span class="ct-icon-container">
+					<svg width="20" height="20" viewbox="0 0 20 20" aria-hidden="true">
+						<path d="M2.4,5.3c0-0.2-0.1-0.5-0.3-0.7L0.3,2.4V2.1H6l4.5,9.8l3.9-9.8H20v0.3l-1.6,1.5c-0.1,0.1-0.2,0.3-0.2,0.4v11.2c0,0.2,0,0.3,0.2,0.4l1.6,1.5v0.3h-7.8v-0.3l1.6-1.6c0.2-0.2,0.2-0.2,0.2-0.4V6.5L9.4,17.9H8.8L3.6,6.5v7.6c0,0.3,0.1,0.6,0.3,0.9L6,17.6v0.3H0v-0.3L2.1,15c0.2-0.2,0.3-0.6,0.3-0.9V5.3z"></path>
+					</svg>
+				</span>				</a>
+			
+			
+					</div>
+
+	
+</div>
+</div></div>
+</div></div></div>
+<div id="main-container">
+	<header id="header" class="ct-header" data-id="type-1" itemscope="" itemtype="https://schema.org/WPHeader"><div data-device="desktop" data-transparent=""><div data-row="middle" data-column-set="3" data-transparent-row="yes"><div class="ct-container">
+<div data-column="start" data-placements="1"><div data-items="primary">
+<div class="site-branding" data-id="logo" itemscope="itemscope" itemtype="https://schema.org/Organization">
+
+			<a href="https://nvndez.github.io/dial-a-burguer/" class="site-logo-container" rel="home" itemprop="url"><img width="500" height="500" src="https://nvndez.github.io/dial-a-burguer/wp-content/uploads/2024/06/DALLE_2024-03-29_17.00.50_-_Create_a_vibrant_logo_for_Dial-A-Burger_a_burger_delivery_game._The_logo_should_feature_an_illustrated_burger_in_a_dynamic_and_playful_style_incor-removebg-preview.png" class="default-logo" alt="Dial-a Burguer" decoding="async" srcset="https://nvndez.github.io/dial-a-burguer/wp-content/uploads/2024/06/DALLE_2024-03-29_17.00.50_-_Create_a_vibrant_logo_for_Dial-A-Burger_a_burger_delivery_game._The_logo_should_feature_an_illustrated_burger_in_a_dynamic_and_playful_style_incor-removebg-preview.png 500w, https://nvndez.github.io/dial-a-burguer/wp-content/uploads/2024/06/DALLE_2024-03-29_17.00.50_-_Create_a_vibrant_logo_for_Dial-A-Burger_a_burger_delivery_game._The_logo_should_feature_an_illustrated_burger_in_a_dynamic_and_playful_style_incor-removebg-preview-300x300.png 300w, https://nvndez.github.io/dial-a-burguer/wp-content/uploads/2024/06/DALLE_2024-03-29_17.00.50_-_Create_a_vibrant_logo_for_Dial-A-Burger_a_burger_delivery_game._The_logo_should_feature_an_illustrated_burger_in_a_dynamic_and_playful_style_incor-removebg-preview-150x150.png 150w, https://nvndez.github.io/dial-a-burguer/wp-content/uploads/2024/06/DALLE_2024-03-29_17.00.50_-_Create_a_vibrant_logo_for_Dial-A-Burger_a_burger_delivery_game._The_logo_should_feature_an_illustrated_burger_in_a_dynamic_and_playful_style_incor-removebg-preview-100x100.png 100w" sizes="(max-width: 500px) 100vw, 500px"></a>	
+	</div>
+
+</div></div>
+<div data-column="middle"><div data-items="">
+<nav id="header-menu-1" class="header-menu-1" data-id="menu" data-interaction="hover" data-menu="type-1" data-dropdown="type-1:simple" data-responsive="no" itemscope="" itemtype="https://schema.org/SiteNavigationElement" aria-label="Menu do cabeçalho">
+
+	<ul id="menu-main-menu" class="menu" role="menubar">
+<li id="menu-item-967" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-700 current_page_item menu-item-967" role="none"><a href="https://nvndez.github.io/dial-a-burguer/" aria-current="page" class="ct-menu-link" role="menuitem">Home</a></li>
+<li id="menu-item-1001" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1001" role="none"><a href="#game" class="ct-menu-link" role="menuitem">About</a></li>
+<li id="menu-item-1003" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1003" role="none"><a href="#objective" class="ct-menu-link" role="menuitem">Objective</a></li>
+<li id="menu-item-1002" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1002" role="none"><a href="#levels" class="ct-menu-link" role="menuitem">Levels</a></li>
+</ul></nav>
+
+</div></div>
+<div data-column="end"></div>
+</div></div></div>
+<div data-device="mobile" data-transparent=""><div data-row="middle" data-column-set="2" data-transparent-row="yes"><div class="ct-container">
+<div data-column="start" data-placements="1"><div data-items="primary">
+<div class="site-branding" data-id="logo">
+
+			<a href="https://nvndez.github.io/dial-a-burguer/" class="site-logo-container" rel="home" itemprop="url"><img width="500" height="500" src="https://nvndez.github.io/dial-a-burguer/wp-content/uploads/2024/06/DALLE_2024-03-29_17.00.50_-_Create_a_vibrant_logo_for_Dial-A-Burger_a_burger_delivery_game._The_logo_should_feature_an_illustrated_burger_in_a_dynamic_and_playful_style_incor-removebg-preview.png" class="default-logo" alt="Dial-a Burguer" decoding="async" srcset="https://nvndez.github.io/dial-a-burguer/wp-content/uploads/2024/06/DALLE_2024-03-29_17.00.50_-_Create_a_vibrant_logo_for_Dial-A-Burger_a_burger_delivery_game._The_logo_should_feature_an_illustrated_burger_in_a_dynamic_and_playful_style_incor-removebg-preview.png 500w, https://nvndez.github.io/dial-a-burguer/wp-content/uploads/2024/06/DALLE_2024-03-29_17.00.50_-_Create_a_vibrant_logo_for_Dial-A-Burger_a_burger_delivery_game._The_logo_should_feature_an_illustrated_burger_in_a_dynamic_and_playful_style_incor-removebg-preview-300x300.png 300w, https://nvndez.github.io/dial-a-burguer/wp-content/uploads/2024/06/DALLE_2024-03-29_17.00.50_-_Create_a_vibrant_logo_for_Dial-A-Burger_a_burger_delivery_game._The_logo_should_feature_an_illustrated_burger_in_a_dynamic_and_playful_style_incor-removebg-preview-150x150.png 150w, https://nvndez.github.io/dial-a-burguer/wp-content/uploads/2024/06/DALLE_2024-03-29_17.00.50_-_Create_a_vibrant_logo_for_Dial-A-Burger_a_burger_delivery_game._The_logo_should_feature_an_illustrated_burger_in_a_dynamic_and_playful_style_incor-removebg-preview-100x100.png 100w" sizes="(max-width: 500px) 100vw, 500px"></a>	
+	</div>
+
+</div></div>
+<div data-column="end" data-placements="1"><div data-items="primary">
+<button data-toggle-panel="#offcanvas" class="ct-header-trigger ct-toggle " data-design="simple" data-label="right" aria-label="Menu" data-id="trigger">
+
+	<span class="ct-label ct-hidden-sm ct-hidden-md ct-hidden-lg">Menu</span>
+
+	<svg class="ct-icon" width="18" height="14" viewbox="0 0 18 14" aria-hidden="true" data-type="type-1">
+
+		<rect y="0.00" width="18" height="1.7" rx="1"></rect>
+		<rect y="6.15" width="18" height="1.7" rx="1"></rect>
+		<rect y="12.3" width="18" height="1.7" rx="1"></rect>
+	</svg>
+</button>
+</div></div>
+</div></div></div></header>
+	<main id="main" class="site-main hfeed">
+
+		
+	<div class="ct-container-full" data-content="normal">
+
+		
+		
+	<article id="post-700" class="post-700 page type-page status-publish hentry">
+
+		
+		
+		
+		<div class="entry-content">
+					<div data-elementor-type="wp-page" data-elementor-id="700" class="elementor elementor-700">
+				<div class="elementor-element elementor-element-f47e99a e-flex e-con-boxed e-con e-parent" data-id="f47e99a" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-e06974b e-flex e-con-boxed e-con e-child" data-id="e06974b" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-125e13c e-con-full e-flex e-con e-child" data-id="125e13c" data-element_type="container">
+				<div class="elementor-element elementor-element-0692a34 elementor-widget elementor-widget-text-editor" data-id="0692a34" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.21.0 - 26-05-2024 */
+.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#69727d;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#69727d;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<p>From $80</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-3448c83 elementor-widget elementor-widget-heading" data-id="3448c83" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.21.0 - 26-05-2024 */
+.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style>
+<h2 class="elementor-heading-title elementor-size-default">DIAL-A BURGUER</h2>		</div>
+				</div>
+		<div class="elementor-element elementor-element-fdc0098 e-flex e-con-boxed e-con e-child" data-id="fdc0098" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-201aac8 elementor-widget elementor-widget-button" data-id="201aac8" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm" href="#">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Download</span>
+					</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-7fbce90 ct-frosted-glass e-flex e-con-boxed e-con e-child" data-id="7fbce90" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-decd1db elementor-position-left elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="decd1db" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+			<link rel="stylesheet" href="https://nvndez.github.io/dial-a-burguer/wp-content/plugins/elementor/assets/css/widget-icon-box.min.css">		<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-">
+				<svg aria-hidden="true" class="e-font-icon-svg e-fas-phone-volume" viewbox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M97.333 506.966c-129.874-129.874-129.681-340.252 0-469.933 5.698-5.698 14.527-6.632 21.263-2.422l64.817 40.513a17.187 17.187 0 0 1 6.849 20.958l-32.408 81.021a17.188 17.188 0 0 1-17.669 10.719l-55.81-5.58c-21.051 58.261-20.612 122.471 0 179.515l55.811-5.581a17.188 17.188 0 0 1 17.669 10.719l32.408 81.022a17.188 17.188 0 0 1-6.849 20.958l-64.817 40.513a17.19 17.19 0 0 1-21.264-2.422zM247.126 95.473c11.832 20.047 11.832 45.008 0 65.055-3.95 6.693-13.108 7.959-18.718 2.581l-5.975-5.726c-3.911-3.748-4.793-9.622-2.261-14.41a32.063 32.063 0 0 0 0-29.945c-2.533-4.788-1.65-10.662 2.261-14.41l5.975-5.726c5.61-5.378 14.768-4.112 18.718 2.581zm91.787-91.187c60.14 71.604 60.092 175.882 0 247.428-4.474 5.327-12.53 5.746-17.552.933l-5.798-5.557c-4.56-4.371-4.977-11.529-.93-16.379 49.687-59.538 49.646-145.933 0-205.422-4.047-4.85-3.631-12.008.93-16.379l5.798-5.557c5.022-4.813 13.078-4.394 17.552.933zm-45.972 44.941c36.05 46.322 36.108 111.149 0 157.546-4.39 5.641-12.697 6.251-17.856 1.304l-5.818-5.579c-4.4-4.219-4.998-11.095-1.285-15.931 26.536-34.564 26.534-82.572 0-117.134-3.713-4.836-3.115-11.711 1.285-15.931l5.818-5.579c5.159-4.947 13.466-4.337 17.856 1.304z"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h6 class="elementor-icon-box-title">
+						<span>
+							Answer the call						</span>
+					</h6>
+				
+									<p class="elementor-icon-box-description">
+						Get all requests from costumers					</p>
+				
+			</div>
+			
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-74f48fc elementor-position-left elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="74f48fc" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-">
+				<svg aria-hidden="true" class="e-font-icon-svg e-fas-caravan" viewbox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><path d="M416,208a16,16,0,1,0,16,16A16,16,0,0,0,416,208ZM624,320H576V160A160,160,0,0,0,416,0H64A64,64,0,0,0,0,64V320a64,64,0,0,0,64,64H96a96,96,0,0,0,192,0H624a16,16,0,0,0,16-16V336A16,16,0,0,0,624,320ZM192,432a48,48,0,1,1,48-48A48.05,48.05,0,0,1,192,432Zm64-240a32,32,0,0,1-32,32H96a32,32,0,0,1-32-32V128A32,32,0,0,1,96,96H224a32,32,0,0,1,32,32ZM448,320H320V128a32,32,0,0,1,32-32h64a32,32,0,0,1,32,32Z"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h6 class="elementor-icon-box-title">
+						<span>
+							Get the burguer						</span>
+					</h6>
+				
+									<p class="elementor-icon-box-description">
+						Pick up the burguer from the store					</p>
+				
+			</div>
+			
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-fbb7b46 elementor-position-left elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="fbb7b46" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-">
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 50 50"><path d="M50 25a25 25 0 1 1-9.5-19.6 2 2 0 0 1 .3 2.9 2 2 0 0 1-2.9.3 20.8 20.8 0 1 0 5.8 7.3 2 2 0 0 1 1-2.8 2 2 0 0 1 2.8 1C49.2 17.5 50 21.2 50 25zM25 8.3a2 2 0 0 0-2.1 2.1V25a2 2 0 0 0 2.1 2.1h10.4a2 2 0 0 0 2.1-2.1 2 2 0 0 0-2.1-2.1h-8.3V10.4c0-1.1-.9-2.1-2.1-2.1z"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h6 class="elementor-icon-box-title">
+						<span>
+							Deliver the burguer						</span>
+					</h6>
+				
+									<p class="elementor-icon-box-description">
+						Deliver the product to the costumer as fast as possible					</p>
+				
+			</div>
+			
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-594e611 elementor-position-left elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="594e611" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-">
+				<svg aria-hidden="true" class="e-font-icon-svg e-far-gem" viewbox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M464 0H112c-4 0-7.8 2-10 5.4L2 152.6c-2.9 4.4-2.6 10.2.7 14.2l276 340.8c4.8 5.9 13.8 5.9 18.6 0l276-340.8c3.3-4.1 3.6-9.8.7-14.2L474.1 5.4C471.8 2 468.1 0 464 0zm-19.3 48l63.3 96h-68.4l-51.7-96h56.8zm-202.1 0h90.7l51.7 96H191l51.6-96zm-111.3 0h56.8l-51.7 96H68l63.3-96zm-43 144h51.4L208 352 88.3 192zm102.9 0h193.6L288 435.3 191.2 192zM368 352l68.2-160h51.4L368 352z"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h6 class="elementor-icon-box-title">
+						<span>
+							Complete the game						</span>
+					</h6>
+				
+									<p class="elementor-icon-box-description">
+						Finish all levels successfully					</p>
+				
+			</div>
+			
+		</div>
+				</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-110a5cf e-flex e-con-boxed e-con e-parent" data-id="110a5cf" data-element_type="container" id="game">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-b9b252b e-flex e-con-boxed e-con e-child" data-id="b9b252b" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-2b48ab4 e-con-full e-flex e-con e-child" data-id="2b48ab4" data-element_type="container">
+				<div class="elementor-element elementor-element-87d8dc3 elementor-widget elementor-widget-heading" data-id="87d8dc3" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Burguer Express</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-7332b6f elementor-widget elementor-widget-text-editor" data-id="7332b6f" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p><strong>“Burger Express: Dial-A-Burger”</strong> is an interactive 3D platformer game that transports players to the bustling heart of a vibrant city. Here, a small but ambitious owner of a burger food truck, named “Dial-A-Burger,” aspires to turn his business into the culinary sensation of the metropolis.</p>
+<p>Armed with enthusiasm and a nimble motorbike, the player uses nearby phone booths to receive orders, collects the irresistible burgers from the food truck, and delivers these delights to customers scattered across the city.</p>
+<p>As the player progresses through the game levels, the number of orders increases while the time to deliver them decreases. The player must manage their time well and make precise decisions to complete all tasks before the time runs out. This includes choosing the best routes and deciding how many orders to carry at once.</p>						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-f8b10b4 e-con-full e-flex e-con e-child" data-id="f8b10b4" data-element_type="container">
+				<div class="elementor-element elementor-element-eb3f2fa elementor-widget elementor-widget-image" data-id="eb3f2fa" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.21.0 - 26-05-2024 */
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>										<img fetchpriority="high" decoding="async" width="500" height="500" src="https://nvndez.github.io/dial-a-burguer/wp-content/uploads/2024/06/DALLE_2024-03-29_17.00.50_-_Create_a_vibrant_logo_for_Dial-A-Burger_a_burger_delivery_game._The_logo_should_feature_an_illustrated_burger_in_a_dynamic_and_playful_style_incor-removebg-preview.png" class="attachment-full size-full wp-image-973" alt="" srcset="https://nvndez.github.io/dial-a-burguer/wp-content/uploads/2024/06/DALLE_2024-03-29_17.00.50_-_Create_a_vibrant_logo_for_Dial-A-Burger_a_burger_delivery_game._The_logo_should_feature_an_illustrated_burger_in_a_dynamic_and_playful_style_incor-removebg-preview.png 500w, https://nvndez.github.io/dial-a-burguer/wp-content/uploads/2024/06/DALLE_2024-03-29_17.00.50_-_Create_a_vibrant_logo_for_Dial-A-Burger_a_burger_delivery_game._The_logo_should_feature_an_illustrated_burger_in_a_dynamic_and_playful_style_incor-removebg-preview-300x300.png 300w, https://nvndez.github.io/dial-a-burguer/wp-content/uploads/2024/06/DALLE_2024-03-29_17.00.50_-_Create_a_vibrant_logo_for_Dial-A-Burger_a_burger_delivery_game._The_logo_should_feature_an_illustrated_burger_in_a_dynamic_and_playful_style_incor-removebg-preview-150x150.png 150w, https://nvndez.github.io/dial-a-burguer/wp-content/uploads/2024/06/DALLE_2024-03-29_17.00.50_-_Create_a_vibrant_logo_for_Dial-A-Burger_a_burger_delivery_game._The_logo_should_feature_an_illustrated_burger_in_a_dynamic_and_playful_style_incor-removebg-preview-100x100.png 100w" sizes="(max-width: 500px) 100vw, 500px">													</div>
+				</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-47e4524 e-flex e-con-boxed e-con e-parent" data-id="47e4524" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-f014b68 e-con-full ct-mainbox e-flex e-con e-child" data-id="f014b68" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-f32f368 elementor-widget elementor-widget-heading" data-id="f32f368" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h5 class="elementor-heading-title elementor-size-default">Driver</h5>		</div>
+				</div>
+				<div class="elementor-element elementor-element-33016e6 elementor-widget elementor-widget-text-editor" data-id="33016e6" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Player Character</p>						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-e009a9b e-con-full e-flex e-con e-child" data-id="e009a9b" data-element_type="container">
+		<div class="elementor-element elementor-element-6130774 ct-mainbox e-flex e-con-boxed e-con e-child" data-id="6130774" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-e5207d5 elementor-widget elementor-widget-heading" data-id="e5207d5" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h5 class="elementor-heading-title elementor-size-default">Bike</h5>		</div>
+				</div>
+				<div class="elementor-element elementor-element-abaf751 elementor-widget elementor-widget-text-editor" data-id="abaf751" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Player Vehicle</p>						</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-4b90013 e-flex e-con-boxed e-con e-child" data-id="4b90013" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-d6d31d8 e-con-full ct-mainbox e-flex e-con e-child" data-id="d6d31d8" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-7b1f1e0 elementor-widget elementor-widget-heading" data-id="7b1f1e0" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h5 class="elementor-heading-title elementor-size-default">Burguer</h5>		</div>
+				</div>
+				<div class="elementor-element elementor-element-e69f09a elementor-widget elementor-widget-text-editor" data-id="e69f09a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Costumer Product</p>						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-9d09aaa e-con-full ct-mainbox e-flex e-con e-child" data-id="9d09aaa" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-e193747 elementor-widget elementor-widget-heading" data-id="e193747" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h5 class="elementor-heading-title elementor-size-default">Store</h5>		</div>
+				</div>
+				<div class="elementor-element elementor-element-abd9c1d elementor-widget elementor-widget-text-editor" data-id="abd9c1d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Player Store</p>						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-63fc81a e-flex e-con-boxed e-con e-parent" data-id="63fc81a" data-element_type="container" id="objective">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-e063e90 e-con-full ct-mainbox e-flex e-con e-child" data-id="e063e90" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-adaa110 elementor-widget elementor-widget-heading" data-id="adaa110" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h6 class="elementor-heading-title elementor-size-default">#1 The Start - Gear Up Your Character</h6>		</div>
+				</div>
+				<div class="elementor-element elementor-element-0ebe0b0 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="0ebe0b0" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.21.0 - 26-05-2024 */
+.elementor-widget-divider{--divider-border-style:none;--divider-border-width:1px;--divider-color:#0c0d0e;--divider-icon-size:20px;--divider-element-spacing:10px;--divider-pattern-height:24px;--divider-pattern-size:20px;--divider-pattern-url:none;--divider-pattern-repeat:repeat-x}.elementor-widget-divider .elementor-divider{display:flex}.elementor-widget-divider .elementor-divider__text{font-size:15px;line-height:1;max-width:95%}.elementor-widget-divider .elementor-divider__element{margin:0 var(--divider-element-spacing);flex-shrink:0}.elementor-widget-divider .elementor-icon{font-size:var(--divider-icon-size)}.elementor-widget-divider .elementor-divider-separator{display:flex;margin:0;direction:ltr}.elementor-widget-divider--view-line_icon .elementor-divider-separator,.elementor-widget-divider--view-line_text .elementor-divider-separator{align-items:center}.elementor-widget-divider--view-line_icon .elementor-divider-separator:after,.elementor-widget-divider--view-line_icon .elementor-divider-separator:before,.elementor-widget-divider--view-line_text .elementor-divider-separator:after,.elementor-widget-divider--view-line_text .elementor-divider-separator:before{display:block;content:"";border-block-end:0;flex-grow:1;border-block-start:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--element-align-left .elementor-divider .elementor-divider-separator>.elementor-divider__svg:first-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-left .elementor-divider-separator:before{content:none}.elementor-widget-divider--element-align-left .elementor-divider__element{margin-left:0}.elementor-widget-divider--element-align-right .elementor-divider .elementor-divider-separator>.elementor-divider__svg:last-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-right .elementor-divider-separator:after{content:none}.elementor-widget-divider--element-align-right .elementor-divider__element{margin-right:0}.elementor-widget-divider--element-align-start .elementor-divider .elementor-divider-separator>.elementor-divider__svg:first-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-start .elementor-divider-separator:before{content:none}.elementor-widget-divider--element-align-start .elementor-divider__element{margin-inline-start:0}.elementor-widget-divider--element-align-end .elementor-divider .elementor-divider-separator>.elementor-divider__svg:last-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-end .elementor-divider-separator:after{content:none}.elementor-widget-divider--element-align-end .elementor-divider__element{margin-inline-end:0}.elementor-widget-divider:not(.elementor-widget-divider--view-line_text):not(.elementor-widget-divider--view-line_icon) .elementor-divider-separator{border-block-start:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--separator-type-pattern{--divider-border-style:none}.elementor-widget-divider--separator-type-pattern.elementor-widget-divider--view-line .elementor-divider-separator,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:after,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:before,.elementor-widget-divider--separator-type-pattern:not([class*=elementor-widget-divider--view]) .elementor-divider-separator{width:100%;min-height:var(--divider-pattern-height);-webkit-mask-size:var(--divider-pattern-size) 100%;mask-size:var(--divider-pattern-size) 100%;-webkit-mask-repeat:var(--divider-pattern-repeat);mask-repeat:var(--divider-pattern-repeat);background-color:var(--divider-color);-webkit-mask-image:var(--divider-pattern-url);mask-image:var(--divider-pattern-url)}.elementor-widget-divider--no-spacing{--divider-pattern-size:auto}.elementor-widget-divider--bg-round{--divider-pattern-repeat:round}.rtl .elementor-widget-divider .elementor-divider__text{direction:rtl}.e-con-inner>.elementor-widget-divider,.e-con>.elementor-widget-divider{width:var(--container-widget-width,100%);--flex-grow:var(--container-widget-flex-grow)}</style>		<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-5e6a354 elementor-widget elementor-widget-text-editor" data-id="5e6a354" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Begin your journey at the &#8220;Dial-A-Burger&#8221; food truck, already seated on your trusty motorbike. The bustling city awaits as you prepare to take on the role of the city&#8217;s favorite burger delivery rider.</p>						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-1192661 e-con-full ct-mainbox e-flex e-con e-child" data-id="1192661" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-088e21d elementor-widget elementor-widget-heading" data-id="088e21d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h6 class="elementor-heading-title elementor-size-default">#2 The Call - Answering the Order</h6>		</div>
+				</div>
+				<div class="elementor-element elementor-element-02ad769 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="02ad769" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-e61d7aa elementor-widget elementor-widget-text-editor" data-id="e61d7aa" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Hear the ring of a phone booth near the food truck. Ride over quickly to answer the call and receive the customer&#8217;s order. Be prepared, as this is just the first of many!</p>						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-1a130a7 e-con-full ct-mainbox e-flex e-con e-child" data-id="1a130a7" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-634e849 elementor-widget elementor-widget-heading" data-id="634e849" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h6 class="elementor-heading-title elementor-size-default">#3 The Pickup - Collecting the Burgers</h6>		</div>
+				</div>
+				<div class="elementor-element elementor-element-948eeba elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="948eeba" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-ced80e0 elementor-widget elementor-widget-text-editor" data-id="ced80e0" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Return to the food truck to collect the freshly made burgers. Make sure you&#8217;re quick and efficient, as the customers are eagerly waiting for their delicious meals.</p>						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-9cb976d e-con-full ct-mainbox e-flex e-con e-child" data-id="9cb976d" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-c5b5cf0 elementor-widget elementor-widget-heading" data-id="c5b5cf0" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h6 class="elementor-heading-title elementor-size-default">#4 The Delivery - Racing to the Customer</h6>		</div>
+				</div>
+				<div class="elementor-element elementor-element-add5593 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="add5593" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-64c5ae2 elementor-widget elementor-widget-text-editor" data-id="64c5ae2" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Navigate the busy streets of the city to deliver the burgers to the customer&#8217;s doorstep. Once the delivery is made, keep an ear out for the next ringing phone booth signaling another order. Repeat the process to keep the city’s hunger at bay and your business booming.</p>						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-016044a e-flex e-con-boxed e-con e-parent" data-id="016044a" data-element_type="container" id="levels">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-e7696b8 e-con-full e-flex e-con e-child" data-id="e7696b8" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-63262a9 elementor-view-stacked elementor-shape-circle elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="63262a9" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-">
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 40 40"><path d="M14.7 16c-.3 0-.7-.1-.9-.4-.3-.2-.4-.6-.4-.9 0-.3.1-.7.4-.9.5-.5 1.4-.5 1.9 0 .3.2.4.6.4.9l-.1.5-.3.4-.4.3-.6.1zm10.1 8.1-.4.3-.3.4-.1.5c0 .3.1.7.4.9.2.3.6.4.9.4l.5-.1.4-.3.3-.4.1-.5c0-.3-.1-.7-.4-.9-.3-.4-.9-.5-1.4-.3zm.5-9.4c-.5-.5-1.4-.5-1.9 0l-8.7 8.7c-.5.5-.5 1.4 0 1.9.3.3.6.4.9.4.3 0 .7-.1.9-.4l8.7-8.7c.6-.5.6-1.4.1-1.9zM40 20c0 1.1-.4 2.1-1.2 2.8l-3 3c-.2.2-.4.6-.4.9v4.7a4 4 0 0 1-4 4h-4.7c-.3 0-.7.1-.9.4l-3 3c-.7.8-1.7 1.2-2.8 1.2-1.1 0-2.1-.4-2.8-1.2l-3-3c-.2-.2-.6-.4-.9-.4H8.5a4 4 0 0 1-4-4v-4.7c0-.3-.1-.7-.4-.9l-3-3A4 4 0 0 1 0 20c0-1.1.4-2.1 1.2-2.8l3-3c.2-.2.4-.6.4-.9V8.5a4 4 0 0 1 4-4h4.7c.3 0 .7-.1.9-.4l3-3A4 4 0 0 1 20 0c1.1 0 2.1.4 2.8 1.2l3 3c.2.2.6.4.9.4h4.7a4 4 0 0 1 4 4v4.7c0 .3.1.7.4.9l3 3c.8.7 1.2 1.7 1.2 2.8zm-2.7 0c0-.3-.1-.7-.4-.9l-3-3a4.2 4.2 0 0 1-1.2-2.8V8.5c0-.7-.6-1.3-1.3-1.3h-4.7c-1.1 0-2.1-.4-2.8-1.2l-3-3c-.2-.2-.6-.4-.9-.4-.3 0-.7.1-.9.4l-3 3c-.7.7-1.8 1.2-2.8 1.2H8.5c-.7 0-1.3.6-1.3 1.3v4.7c0 1-.4 2.1-1.2 2.8l-3 3c-.2.2-.4.6-.4.9s.1.7.4.9l3 3c.8.8 1.2 1.7 1.2 2.8v4.7c0 .7.6 1.3 1.3 1.3h4.7c1 0 2.1.4 2.8 1.2l3 3c.5.5 1.3.5 1.8 0l3-3c.8-.8 1.7-1.2 2.8-1.2h4.7c.7 0 1.3-.6 1.3-1.3v-4.7c0-1.1.4-2.1 1.2-2.8l3-3c.4-.1.5-.5.5-.8z"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h5 class="elementor-icon-box-title">
+						<span>
+							Getting Started						</span>
+					</h5>
+				
+				
+			</div>
+			
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-3c118d8 elementor-widget elementor-widget-text-editor" data-id="3c118d8" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p><strong>Level 1: The First Rush</strong></p>
+<ul>
+<li>
+<strong>Time Limit:</strong> 20 minutes</li>
+<li>
+<strong>Deliveries:</strong> 20 orders</li>
+<li>
+<strong>Description:</strong> Familiarize yourself with the basics of burger delivery. Answer the phone, pick up the orders from the food truck, and deliver them to customers&#8217; homes efficiently.</li>
+</ul>
+<p><strong>Level 2: Picking Up the Pace</strong></p>
+<ul>
+<li>
+<strong>Time Limit:</strong> 18 minutes</li>
+<li>
+<strong>Deliveries:</strong> 20 orders</li>
+<li>
+<strong>Description:</strong> With slightly less time on the clock, improve your speed and accuracy. The city&#8217;s demands are increasing, and so should your efficiency.</li>
+</ul>
+<p><strong>Level 3: The Challenge Begins</strong></p>
+<ul>
+<li>
+<strong>Time Limit:</strong> 15 minutes</li>
+<li>
+<strong>Deliveries:</strong> 20 orders</li>
+<li>
+<strong>Description:</strong> The orders keep coming in. Maintain your cool and streamline your process to keep up with the growing demand.</li>
+</ul>						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-b98e55d e-con-full e-flex e-con e-child" data-id="b98e55d" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-519a0ec elementor-view-stacked elementor-shape-circle elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="519a0ec" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-">
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 40 40"><path d="m10.4 37.6.9.9-.9-.9zm.3-.3-.9-.9.9.9zm6.6 0 .9-.9-.9.9zm.4.4-.9.9.9-.9zm4.6 0-.9-.9.9.9zm.4-.4.9.9-.9-.9zm6.6 0-.9.9.9-.9zm.3.3-.9.9.9-.9zM13.3 16H16v-2.7h-2.7V16zM24 16h2.7v-2.7H24V16zm2.9 4.5a8.7 8.7 0 0 1-13.9 0l-2.1 1.6c4.5 6 13.6 6 18.1 0l-2.1-1.6zm-15.5 18 .2-.2-1.9-1.9-.2.2 1.9 1.9zm2.5-1.2h.2v-2.7h-.2v2.7zm2.5 1 .4.4 1.9-1.9-.4-.4-1.9 1.9zm6.8.4.4-.4-1.9-1.9-.4.4 1.9 1.9zm2.7-1.4h.2v-2.7h-.2v2.7zm2.5 1 .2.2 1.9-1.9-.2-.2-1.9 1.9zm3.8 1.7c2.8 0 5.1-2.3 5.1-5.1h-2.7c0 1.3-1.1 2.4-2.4 2.4V40zm-3.6-1.5a5 5 0 0 0 3.6 1.5v-2.7c-.6 0-1.3-.3-1.7-.7l-1.9 1.9zm-2.5-1.2c.9 0 1.7.3 2.3.9l1.9-1.9a5.9 5.9 0 0 0-4.2-1.7v2.7zm-2.5 1c.6-.6 1.4-.9 2.3-.9v-2.7c-1.6 0-3.1.6-4.2 1.7l1.9 1.9zM20 40c1.2 0 2.4-.5 3.2-1.3l-1.9-1.9c-.4.4-.8.6-1.3.6V40zm-3.2-1.3c.9.9 2 1.3 3.2 1.3v-2.7c-.5 0-1-.2-1.3-.6l-1.9 2zm-2.7-1.4c.9 0 1.7.3 2.3.9l1.9-1.9a5.9 5.9 0 0 0-4.2-1.7v2.7zm-2.5 1c.6-.6 1.4-.9 2.3-.9v-2.7c-1.6 0-3.1.6-4.2 1.7l1.9 1.9zM7.8 40c1.4 0 2.7-.5 3.6-1.5l-1.9-1.9c-.5.5-1.1.7-1.7.7V40zm-5.1-5.1C2.7 37.7 5 40 7.8 40v-2.7a2.4 2.4 0 0 1-2.4-2.4H2.7zM20 2.7c8.1 0 14.7 6.6 14.7 14.7h2.7A17.5 17.5 0 0 0 20 0v2.7zM5.3 17.3C5.3 9.2 11.9 2.7 20 2.7V0C10.4 0 2.7 7.8 2.7 17.3h2.6zm-2.6 0v17.6h2.7V17.3H2.7zm34.6 17.6V17.3h-2.7v17.6h2.7z"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h5 class="elementor-icon-box-title">
+						<span>
+							Intermediate Trials						</span>
+					</h5>
+				
+				
+			</div>
+			
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-005e3c1 elementor-widget elementor-widget-text-editor" data-id="005e3c1" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p><strong>Level 4: Speed and Precision</strong></p>
+<ul>
+<li>
+<strong>Time Limit:</strong> 12 minutes</li>
+<li>
+<strong>Deliveries:</strong> 22 orders</li>
+<li>
+<strong>Description:</strong> Time is of the essence. Deliver more orders in less time. Optimize your routes and manage multiple orders to stay ahead.</li>
+</ul>
+<p><strong>Level 5: The Pressure Cooker</strong></p>
+<ul>
+<li>
+<strong>Time Limit:</strong> 10 minutes</li>
+<li>
+<strong>Deliveries:</strong> 22 orders</li>
+<li>
+<strong>Description:</strong> The pressure mounts as you race against the clock. Every second counts, and your delivery skills will be put to the test.</li>
+</ul>						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-4cdffc7 e-con-full e-flex e-con e-child" data-id="4cdffc7" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-dd36b18 elementor-view-stacked elementor-shape-circle elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="dd36b18" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-">
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 40 40"><path d="m29.5 16.5-5.7-.9-2.6-5.5a1.3 1.3 0 0 0-2.4 0l-2.6 5.5-5.7.9c-.5.1-.9.4-1.1.9-.2.5 0 1 .3 1.4l4.2 4.3-1 6.1 1.3.2-1.3-.2c-.1.5.1 1 .5 1.3.4.3 1 .3 1.4.1l5.1-2.8 5.1 2.8c.4.2 1 .2 1.4-.1.4-.3.6-.8.5-1.3l-1-6.1 4.2-4.3c.3-.4.5-.9.3-1.4 0-.5-.4-.8-.9-.9zM19.4 25 16 26.8l.7-4c.1-.4-.1-.8-.4-1.1l-1 .9 1-.9-2.9-2.9 3.9-.6-.2-1.3.2 1.3c.4-.1.8-.3 1-.8l1.7-3.6 1.7 3.6c.2.4.6.7 1 .8l.2-1.3-.2 1.3 3.9.6-2.9 2.9 1 .9-1-.9c-.3.3-.4.7-.4 1.1l.7 4-3.4-1.8c-.4-.2-.8-.2-1.2 0zM20 0C9 0 0 9 0 20s9 20 20 20 20-9 20-20S31 0 20 0zm0 37.3a17.3 17.3 0 1 1 0-34.6 17.3 17.3 0 0 1 0 34.6z"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h5 class="elementor-icon-box-title">
+						<span>
+							Advanced Challenges						</span>
+					</h5>
+				
+				
+			</div>
+			
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-0b78441 elementor-widget elementor-widget-text-editor" data-id="0b78441" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p><strong>Level 6: Master Courier</strong></p>
+<ul>
+<li>
+<strong>Time Limit:</strong> 9 minutes</li>
+<li>
+<strong>Deliveries:</strong> 25 orders</li>
+<li>
+<strong>Description:</strong> Master the art of multi-tasking. Handle an increased number of orders with precision and speed.</li>
+</ul>
+<p><strong>Level 7: Urban Navigator</strong></p>
+<ul>
+<li>
+<strong>Time Limit:</strong> 8 minutes</li>
+<li>
+<strong>Deliveries:</strong> 25 orders</li>
+<li>
+<strong>Description:</strong> Navigate the complex cityscape efficiently. Optimize your delivery routes to handle the increased load of orders.</li>
+</ul>
+<p><strong>Level 8: The Clock is Ticking</strong></p>
+<ul>
+<li>
+<strong>Time Limit:</strong> 7 minutes</li>
+<li>
+<strong>Deliveries:</strong> 25 orders</li>
+<li>
+<strong>Description:</strong> With less time on the clock, make every move count. Deliver burgers quickly and accurately to keep your customers satisfied.</li>
+</ul>						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-7586630 e-con-full e-flex e-con e-child" data-id="7586630" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-e6a4c6c elementor-view-stacked elementor-shape-circle elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="e6a4c6c" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-">
+				<svg aria-hidden="true" class="e-font-icon-svg e-fas-shipping-fast" viewbox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><path d="M624 352h-16V243.9c0-12.7-5.1-24.9-14.1-33.9L494 110.1c-9-9-21.2-14.1-33.9-14.1H416V48c0-26.5-21.5-48-48-48H112C85.5 0 64 21.5 64 48v48H8c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h272c4.4 0 8 3.6 8 8v16c0 4.4-3.6 8-8 8H40c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h208c4.4 0 8 3.6 8 8v16c0 4.4-3.6 8-8 8H8c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h208c4.4 0 8 3.6 8 8v16c0 4.4-3.6 8-8 8H64v128c0 53 43 96 96 96s96-43 96-96h128c0 53 43 96 96 96s96-43 96-96h48c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zM160 464c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm320 0c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm80-208H416V144h44.1l99.9 99.9V256z"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h5 class="elementor-icon-box-title">
+						<span>
+							Expert Mode						</span>
+					</h5>
+				
+				
+			</div>
+			
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-fa522f0 elementor-widget elementor-widget-text-editor" data-id="fa522f0" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p><strong>Level 9: Rapid Response</strong></p>
+<ul>
+<li>
+<strong>Time Limit:</strong> 6 minutes</li>
+<li>
+<strong>Deliveries:</strong> 27 orders</li>
+<li>
+<strong>Description:</strong> The city’s hunger is at an all-time high. Deliver more orders in a shorter amount of time, demonstrating your expertise.</li>
+</ul>
+<p><strong>Level 10: The Final Sprint</strong></p>
+<ul>
+<li>
+<strong>Time Limit:</strong> 5 minutes</li>
+<li>
+<strong>Deliveries:</strong> 30 orders</li>
+<li>
+<strong>Description:</strong> The ultimate test of your delivery skills. With just 5 minutes to deliver 30 orders, you must be at your very best to complete the final challenge.</li>
+</ul>						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+				</div>
+
+		
+		
+		
+		
+	</article>
+
+	
+		
+			</div>
+
+	</main>
+
+	<footer id="footer" class="ct-footer" data-id="type-1" itemscope="" itemtype="https://schema.org/WPFooter"><div data-row="bottom"><div class="ct-container" data-columns-divider="md:sm"><div data-column="copyright">
+<div class="ct-footer-copyright" data-id="copyright">
+
+	<p>Copyright © 2024 – Dial-a Burguer</p>
+</div>
+</div></div></div></footer>
+</div>
+
+			<script type="text/javascript">const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );</script>
+			<script id="ct-scripts-js-extra">var ct_localizations = {"ajax_url":"https:\/\/nvndez.github.io\/dial-a-burguer\/wp-admin\/admin-ajax.php","public_url":"https:\/\/nvndez.github.io\/dial-a-burguer\/wp-content\/themes\/blocksy\/static\/bundle\/","rest_url":"https:\/\/nvndez.github.io\/dial-a-burguer\/wp-json\/","search_url":"https:\/\/nvndez.github.io\/dial-a-burguer\/search\/QUERY_STRING\/","show_more_text":"Mostrar mais","more_text":"Mais","search_live_results":"Resultados de pesquisa","search_live_no_result":"Sem resultados","search_live_one_result":"Obteve %s resultado. Por favor seleccione-o com a tecla Tab.","search_live_many_results":"Obteve %s resultados. Por favor seleccione-os com a tecla Tab.","expand_submenu":"Expandir menu suspenso","collapse_submenu":"Minimizar menu suspenso","dynamic_js_chunks":[{"id":"blocksy_sticky_header","selector":"header [data-sticky]","url":"https:\/\/nvndez.github.io\/dial-a-burguer\/wp-content\/plugins\/blocksy-companion\/static\/bundle\/sticky.js?ver=2.0.51"}],"dynamic_styles":{"lazy_load":"https:\/\/nvndez.github.io\/dial-a-burguer\/wp-content\/themes\/blocksy\/static\/bundle\/non-critical-styles.min.css?ver=2.0.51","search_lazy":"https:\/\/nvndez.github.io\/dial-a-burguer\/wp-content\/themes\/blocksy\/static\/bundle\/non-critical-search-styles.min.css?ver=2.0.51","back_to_top":"https:\/\/nvndez.github.io\/dial-a-burguer\/wp-content\/themes\/blocksy\/static\/bundle\/back-to-top.min.css?ver=2.0.51"},"dynamic_styles_selectors":[{"selector":".ct-header-cart, #woo-cart-panel","url":"https:\/\/nvndez.github.io\/dial-a-burguer\/wp-content\/themes\/blocksy\/static\/bundle\/cart-header-element-lazy.min.css?ver=2.0.51"},{"selector":".flexy","url":"https:\/\/nvndez.github.io\/dial-a-burguer\/wp-content\/themes\/blocksy\/static\/bundle\/flexy.min.css?ver=2.0.51"},{"selector":"#account-modal","url":"https:\/\/nvndez.github.io\/dial-a-burguer\/wp-content\/plugins\/blocksy-companion\/static\/bundle\/header-account-modal-lazy.min.css?ver=2.0.51"},{"selector":".ct-header-account","url":"https:\/\/nvndez.github.io\/dial-a-burguer\/wp-content\/plugins\/blocksy-companion\/static\/bundle\/header-account-dropdown-lazy.min.css?ver=2.0.51"}]};</script>
+<script src="https://nvndez.github.io/dial-a-burguer/wp-content/themes/blocksy/static/bundle/main.js?ver=2.0.51" id="ct-scripts-js"></script>
+<script src="https://nvndez.github.io/dial-a-burguer/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.21.8" id="elementor-webpack-runtime-js"></script>
+<script src="https://nvndez.github.io/dial-a-burguer/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://nvndez.github.io/dial-a-burguer/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script src="https://nvndez.github.io/dial-a-burguer/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.21.8" id="elementor-frontend-modules-js"></script>
+<script src="https://nvndez.github.io/dial-a-burguer/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js"></script>
+<script src="https://nvndez.github.io/dial-a-burguer/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2" id="jquery-ui-core-js"></script>
+<script id="elementor-frontend-js-before">var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Partilhar no Facebook","shareOnTwitter":"Partilhar no Twitter","pinIt":"Fixá-lo","download":"Download","downloadImage":"Descarregar Imagem","fullscreen":"Écrã Inteiro","zoom":"Zoom","share":"Partilhar","playVideo":"Reproduzir vídeo","previous":"Anterior","next":"Seguinte","close":"Fechar","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile ao alto","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile ao baixo","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Portátil","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.21.8","is_static":false,"experimentalFeatures":{"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_swiper_latest":true,"container_grid":true,"home_screen":true,"ai-layout":true,"landing-pages":true,"e_lazyload":true},"urls":{"assets":"https:\/\/nvndez.github.io\/dial-a-burguer\/wp-content\/plugins\/elementor\/assets\/"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":700,"title":"Dial-a%20Burguer","excerpt":"","featuredImage":false}};</script>
+<script src="https://nvndez.github.io/dial-a-burguer/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.21.8" id="elementor-frontend-js"></script>
+
+</body>
+</html>

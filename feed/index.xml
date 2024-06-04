@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Dial-a Burguer</title>
+	<atom:link href="https://nvndez.github.io/dial-a-burguer/feed/" rel="self" type="application/rss+xml" />
+	<link>https://nvndez.github.io/dial-a-burguer</link>
+	<description></description>
+	<lastBuildDate>Tue, 04 Jun 2024 19:58:51 +0000</lastBuildDate>
+	<language>pt-PT</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.5.3</generator>
+
+<image>
+	<url>https://nvndez.github.io/dial-a-burguer/wp-content/uploads/2024/06/DALLE_2024-03-29_17.00.50_-_Create_a_vibrant_logo_for_Dial-A-Burger_a_burger_delivery_game._The_logo_should_feature_an_illustrated_burger_in_a_dynamic_and_playful_style_incor-removebg-preview-100x100.png</url>
+	<title>Dial-a Burguer</title>
+	<link>https://nvndez.github.io/dial-a-burguer</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+</channel>
+</rss>
