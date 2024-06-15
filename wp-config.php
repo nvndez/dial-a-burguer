@@ -119,6 +119,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	define( 'ABSPATH', __DIR__ . '/' );
 }
 
+
 /**
  *
  * Define as variáveis do WordPress e ficheiros a incluir.
